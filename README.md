@@ -78,7 +78,7 @@ The Spearman rank-order correlation coefficient between average accuracies is $>
 
 Datasets included in *MiniCzechBenchmark* were selected to be representative of [CzechBench](https://huggingface.co/spaces/CIIRC-NLP/czechbench_leaderboard), so it is not surprising that the shared models achieve similar performance on both benchmarks, with a Spearman rank-order correlation coefficient of $0.99$.
 
-If we compare *MiniCzechBenchmark* results to [recently introduced](https://huggingface.co/blog/benczechmark)[BenCzechMark](https://huggingface.co/spaces/CZLC/BenCzechMark), the Spearman rank-order correlation coefficient is $0.65$.
+If we compare *MiniCzechBenchmark* results to the [recently](https://huggingface.co/blog/benczechmark) introduced [BenCzechMark](https://huggingface.co/spaces/CZLC/BenCzechMark), the Spearman rank-order correlation coefficient is approx. $0.65$.
 
 ![](./assets/MiniCzechBenchmark_comparison.png)
 
