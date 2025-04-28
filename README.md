@@ -16,15 +16,17 @@ papermill minicz_bench.ipynb output.ipynb -p MODEL "CohereForAI/aya-expanse-8b" 
 
 The full datasets and few-shot prompts come from the [CzechBench](https://gitlab.com/jirkoada/czech-bench) benchmark. Special thanks to Adam Jirkovsky and the authors of the original datasets for this resource.
 
-## Results (Mar 30, 2025)
+## Results (Apr 21, 2025)
 
 | model                                            |   average_accuracy |   agree_accuracy |   czech_news_accuracy |   klokanek_accuracy |   ctkfacts_accuracy |   average_validity |
 |:-------------------------------------------------|-------------------:|-----------------:|----------------------:|--------------------:|--------------------:|-------------------:|
+| o4-mini                                                  |               0.85 |             0.9  |                  0.84 |                0.92 |                0.74 |               1    |
 | gemini-2.5-pro-exp-03-25                         |               0.84 |             0.89 |                  0.84 |                0.90 |                0.74 |               1    |
 | o3-mini                                          |               0.79 |             0.78 |                  0.82 |                0.92 |                0.66 |               1    |
 | o1-mini                                          |               0.79 |             0.74 |                  0.84 |                0.84 |                0.76 |               1    |
 | deepseek-ai/DeepSeek-R1                          |               0.76 |             0.74 |                  0.82 |                0.78 |                0.72 |               0.97 |
 | Qwen/QwQ-32B                                     |               0.75 |             0.76 |                  0.8  |                0.71 |                0.74 |               0.94 |
+| google/gemini-2.5-flash-preview                          |               0.75 |             0.82 |                  0.84 |                0.62 |                0.72 |               1    |
 | gemini-2.0-pro-exp-02-05                         |               0.75 |             0.79 |                  0.84 |                0.64 |                0.72 |               1    |
 | gemini-1.5-pro-latest                            |               0.72 |             0.78 |                  0.85 |                0.53 |                0.72 |               1    |
 | gemini-2.0-flash-exp                             |               0.72 |             0.72 |                  0.85 |                0.56 |                0.76 |               1    |
@@ -35,9 +37,12 @@ The full datasets and few-shot prompts come from the [CzechBench](https://gitlab
 | deepseek-chat                                    |               0.69 |             0.74 |                  0.8  |                0.54 |                0.7  |               1    |
 | deepseek-ai/DeepSeek-V3                          |               0.68 |             0.71 |                  0.82 |                0.52 |                0.7  |               0.99 |
 | gemini-2.0-flash-lite                            |               0.66 |             0.7  |                  0.84 |                0.44 |                0.68 |               1    |
+| gpt-4.1                                                  |               0.66 |             0.76 |                  0.84 |                0.38 |                0.66 |               1    |
+llama4-maverick-instruct-basic |               0.66 |             0.64 |                  0.81 |                0.48 |                0.7  |               1    |
 | gpt-4o                                           |               0.65 |             0.76 |                  0.84 |                0.33 |                0.69 |               1    |
 | gpt-4o-2024-05-13                                |               0.65 |             0.76 |                  0.82 |                0.34 |                0.68 |               1    |
 | meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo    |               0.64 |             0.72 |                  0.81 |                0.36 |                0.68 |               0.99 |
+| gpt-4.1-mini                                             |               0.64 |             0.7  |                  0.8  |                0.35 |                0.7  |               1    |
 | Qwen/Qwen2.5-72B-Instruct-GPTQ-Int4              |               0.64 |             0.6  |                  0.84 |                0.44 |                0.68 |               1    |
 | unsloth/Qwen2.5-72B-Instruct-bnb-4bit            |               0.64 |             0.58 |                  0.86 |                0.45 |                0.67 |               1    |
 | unsloth/Mistral-Large-Instruct-2407-bnb-4bit     |               0.64 |             0.62 |                  0.83 |                0.36 |                0.72 |               1    |
@@ -59,6 +64,7 @@ The full datasets and few-shot prompts come from the [CzechBench](https://gitlab
 | unsloth/gemma-3-12b-it                           |               0.6  |             0.52 |                  0.83 |                0.33 |                0.71 |               1    |
 | google/gemma-2-27b-it                            |               0.59 |             0.57 |                  0.8  |                0.3  |                0.7  |               1    |
 | gpt-4o-mini                                      |               0.59 |             0.64 |                  0.82 |                0.31 |                0.6  |               1    |
+| llama4-scout-instruct    |               0.59 |             0.6  |                  0.8  |                0.32 |                0.64 |               1    |
 | unsloth/gemma-3-27b-it                           |               0.58 |             0.47 |                  0.84 |                0.4  |                0.62 |               1    |
 | claude-3-haiku-20240307                          |               0.58 |             0.57 |                  0.8  |                0.28 |                0.65 |               1    |
 | gemini-1.5-flash-8b-latest                       |               0.58 |             0.56 |                  0.77 |                0.24 |                0.74 |               1    |
@@ -71,6 +77,7 @@ The full datasets and few-shot prompts come from the [CzechBench](https://gitlab
 | google/gemma-2-9b-it                             |               0.54 |             0.5  |                  0.78 |                0.26 |                0.62 |               1    |
 | gpt-3.5-turbo                                    |               0.53 |             0.48 |                  0.76 |                0.28 |                0.59 |               1    |
 | Qwen/Qwen2.5-7B-Instruct                         |               0.52 |             0.37 |                  0.72 |                0.3  |                0.7  |               1    |
+| gpt-4.1-nano                                             |               0.52 |             0.48 |                  0.7  |                0.28 |
 | CohereForAI/aya-23-35B                           |               0.52 |             0.5  |                  0.76 |                0.22 |                0.6  |               1    |
 | NousResearch/Hermes-3-Llama-3.1-8B               |               0.52 |             0.43 |                  0.7  |                0.26 |                0.68 |               1    |
 | deepseek-ai/DeepSeek-R1-Distill-Qwen-14B         |               0.52 |             0.58 |                  0.26 |                0.54 |                0.7  |               0.73 |
@@ -100,7 +107,7 @@ The full datasets and few-shot prompts come from the [CzechBench](https://gitlab
 | tiiuae/Falcon3-Mamba-7B-Instruct                 |               0.19 |             0.17 |                  0.14 |                0.27 |                0.2  |               0.89 |
 
 
-You can also download results as [CSV table](minicz_bench.csv).
+You can also download March results as [CSV table](minicz_bench.csv). For open models that can fit into 1 GPU (A100 or H100, 80GB) the calculation was performed at a local server with HF `transformers` package; we used OpenAI, Anthropic, Google, TogetherAI or Fireworks API for the rest.
 
 ## Comparison to Full Datasets 
 
