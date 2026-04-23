@@ -1,0 +1,70 @@
+{
+  "data_size": "mini",
+  "datasets": {
+    "agree": "simecek/mini_agree",
+    "ctkfacts": "simecek/mini_ctkfacts",
+    "czech_news": "simecek/mini_czech_news",
+    "klokanek": "simecek/mini_klokanek"
+  },
+  "max_attempts": 5,
+  "max_parallel": 20,
+  "metrics": {
+    "agree": {
+      "accuracy": 0.9,
+      "cost_usd": 0.18462575,
+      "duration_s": 279.200116,
+      "token_usage": {
+        "completion_tokens": 79952,
+        "prompt_tokens": 98887,
+        "total_tokens": 178839
+      },
+      "validity": 1.0
+    },
+    "ctkfacts": {
+      "accuracy": 0.73,
+      "cost_usd": 0.1308195,
+      "duration_s": 316.542708,
+      "token_usage": {
+        "completion_tokens": 39887,
+        "prompt_tokens": 257750,
+        "total_tokens": 297637
+      },
+      "validity": 1.0
+    },
+    "czech_news": {
+      "accuracy": 0.81,
+      "cost_usd": 0.08011175,
+      "duration_s": 322.370108,
+      "token_usage": {
+        "completion_tokens": 16400,
+        "prompt_tokens": 189247,
+        "total_tokens": 205647
+      },
+      "validity": 1.0
+    },
+    "klokanek": {
+      "accuracy": 0.915,
+      "cost_usd": 0.395344,
+      "duration_s": 364.171469,
+      "token_usage": {
+        "completion_tokens": 180306,
+        "prompt_tokens": 138928,
+        "total_tokens": 319234
+      },
+      "validity": 1.0
+    }
+  },
+  "model": "gpt-5-mini",
+  "run_finished_at": "2026-04-23T21:19:58.971922+00:00",
+  "run_name": "gpt-5-mini_mini_simplemessages_api",
+  "run_started_at": "2026-04-23T21:13:54.797319+00:00",
+  "totals": {
+    "cost_usd": 0.790901,
+    "duration_s": 364.174603,
+    "token_usage": {
+      "completion_tokens": 316545,
+      "prompt_tokens": 684812,
+      "total_tokens": 1001357
+    }
+  }
+}

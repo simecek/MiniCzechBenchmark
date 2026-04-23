@@ -124,6 +124,7 @@ celerybeat.pid
 # Environments
 .env
 .venv
+tmp/
 env/
 venv/
 ENV/
@@ -153,6 +154,10 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+
+# Benchmark / Temporal local state
+.ruff_cache/
+.temporal/
 
 # PyCharm
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can

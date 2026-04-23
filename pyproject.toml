@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "minicz-bench"
+version = "0.1.0"
+description = "Mini Czech benchmark runner backed by OpenRouter and Temporal"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "datasets>=2.19.0",
+  "litellm>=1.67.0",
+  "pandas>=2.2.0",
+  "pydantic>=2.7.0",
+  "pydantic-settings>=2.14.0",
+  "python-dotenv>=1.0.1",
+  "temporalio>=1.8.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.2.0",
+]
+
+[project.scripts]
+minicz-bench = "minicz_bench.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["minicz_bench*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

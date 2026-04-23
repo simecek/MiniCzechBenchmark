@@ -1,0 +1,1 @@
+"""Mini Czech benchmark package."""
